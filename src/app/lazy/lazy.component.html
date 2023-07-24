@@ -1,1 +1,45 @@
-<p>lazy works!</p>
+<header class="header">
+  <div class="header__top">
+    <span class="header__logo">LOGO</span>
+    <nav class="header__nav">
+      <a href="#">link1</a>
+      <a href="#">link2</a>
+      <a href="#">link3</a>
+      <a href="#">link4</a>
+    </nav>
+  </div>
+  <div class="header__bottom">
+    <div class="header__information">
+      <p class="header__title">Intro</p>
+      <p class="header__text">
+        Some introduction <br />lines about the <br />
+        website or company
+      </p>
+    </div>
+    <div class="header__img"></div>
+  </div>
+</header>
+
+<main class="main">
+  <div class="dots">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+  <ul class="services-list">
+    <li class="services-list__item" *ngFor="let item of items">{{ item }}</li>
+  </ul>
+  <section class="twitter-feed">
+    <p>Twitter Feed</p>
+  </section>
+</main>
+<footer class="footer">
+  <nav class="footer__nav">
+    <a href="#">link1</a>
+    <a href="#">link2</a>
+    <a href="#">link3</a>
+    <a href="#">link4</a>
+  </nav>
+  <span>info</span>
+</footer>

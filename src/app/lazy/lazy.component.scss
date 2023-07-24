@@ -1,0 +1,126 @@
+.header {
+  background-color: #d8d8d8;
+  padding: 25px 56px 40px 56px;
+  font-size: 12px;
+  line-height: 12px;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 61px;
+    &__logo {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+  &__nav {
+    display: flex;
+    gap: 17px;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__information {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 152px;
+  }
+  &__title {
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: bold;
+  }
+  &__text {
+    line-height: 19px;
+  }
+  &__img {
+    width: 286px;
+    height: 151px;
+    background-color: #9e9e9e;
+  }
+}
+.main {
+  padding: 19px 56px 48px 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  .dots {
+    display: flex;
+    justify-content: center;
+    .dot {
+      width: 12px;
+      height: 12px;
+      background-color: #d8d8d8;
+      border-radius: 50%;
+      margin: 0 5px;
+    }
+  }
+  .services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 38px;
+    width: 487px;
+    .services-list__item {
+      width: 137px;
+      height: 102px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      line-height: 12px;
+      background-color: #d8d8d8;
+      &:nth-child(2) {
+        align-items: flex-end;
+        padding-bottom: 12px;
+      }
+      &:nth-child(3) {
+        align-items: flex-start;
+        padding-top: 12px;
+      }
+      &:nth-child(4) {
+        justify-content: flex-start;
+        padding-left: 12px;
+      }
+      &:nth-child(5) {
+        justify-content: flex-end;
+        padding-right: 12px;
+      }
+      &:nth-child(6) {
+        justify-content: flex-end;
+        align-items: flex-start;
+      }
+    }
+  }
+  .twitter-feed {
+    display: flex;
+    align-items: center;
+    width: 483px;
+    height: 102px;
+    padding-left: 12px;
+    font-size: 12px;
+    line-height: 12px;
+    background-color: #d8d8d8;
+  }
+}
+.footer {
+  background-color: #d8d8d8;
+  padding: 23px 56px 25px 56px;
+  font-size: 12px;
+  line-height: 12px;
+  display: flex;
+  justify-content: space-between;
+  &__nav {
+    display: flex;
+    gap: 17px;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
