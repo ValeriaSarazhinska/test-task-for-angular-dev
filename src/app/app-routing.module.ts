@@ -1,8 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AccessTokenGuard } from '@app/access-token.guard';
 
 const routes: Routes = [
-  { path: 'lazy', loadChildren: () => import('./lazy/lazy.module').then((m) => m.LazyModule) },
+  {
+    path: 'lazy',
+    canLoad: [AccessTokenGuard],
+    loadChildren: () => import('./lazy/lazy.module').then((m) => m.LazyModule),
+  },
   // Fallback when no prior route is matched
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
@@ -10,6 +15,6 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
-  providers: [],
+  providers: [AccessTokenGuard],
 })
 export class AppRoutingModule {}
